@@ -13,10 +13,10 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         // Call necessary seeders first
-        // $this->call([
-        //     AdminSeeder::class,
-        //     CategorySeeder::class,
-        // ]);
+        $this->call([
+            AdminSeeder::class,
+            CategorySeeder::class,
+        ]);
 
         // Ensure categories exist before seeding inventories
         Inventory::factory(20)->create();
