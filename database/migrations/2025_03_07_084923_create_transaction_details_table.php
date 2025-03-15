@@ -3,6 +3,7 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
+use App\Models\User;
 
 return new class extends Migration
 {
@@ -16,7 +17,9 @@ return new class extends Migration
             $table->foreignId('transaction_header_id')->constrained()->onDelete('cascade');
             $table->foreignId('inventories_id')->constrained()->onDelete('cascade');
             $table->integer('amount');
-            $table->decimal('price', 8, 2);
+            $table->decimal('price', 50, 2);
+            $table->string('address');
+            $table->string('postal');
             $table->timestamps();
         });
     }

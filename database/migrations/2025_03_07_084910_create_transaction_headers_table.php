@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('transaction_headers', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
-            $table->decimal('total', 15, 2);
+            $table->decimal('total', 50, 2);
             $table->timestamps();
         });
     }

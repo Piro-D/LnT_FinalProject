@@ -24,7 +24,7 @@
                     <td>{{ $item->id }}</td>
                     <td>{{ $item->category->name }}</td>
                     <td>{{ $item->itemName }}</td>
-                    <td>Rp{{ number_format($item->price, 2) }}</td>
+                    <td>Rp {{ number_format($item->price, 2) }}</td>
                     <td>{{ $item->amount }}</td>
                     <td><img src="{{ asset('images/' . $item->image) }}" alt="Item Image" class="img-fluid"></td>
                     <td>

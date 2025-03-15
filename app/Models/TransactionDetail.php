@@ -17,6 +17,8 @@ class TransactionDetail extends Model
         'inventories_id',
         'amount',
         'price',
+        'address',
+        'postal',
     ];
 
     public function inventory(){

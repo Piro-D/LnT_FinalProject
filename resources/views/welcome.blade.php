@@ -107,7 +107,7 @@
                             <td>{{ $item->amount }}</td>
                             <td><img src="{{ asset('images/' . $item->image) }}" alt="Item Image" class="img-fluid">
                             </td>
-                            <td>${{ number_format($item->price, 2) }}</td>
+                            <td>Rp. {{ number_format($item->price, 2) }}</td>
                         </tr>
                         @empty
                         <tr>

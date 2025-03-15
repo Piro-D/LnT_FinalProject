@@ -36,7 +36,9 @@ class TransactionController extends Controller
                 'transaction_header_id' => $transactionHeader->id,
                 'inventories_id' => $inventory->id,
                 'amount' => $buyAmount,
-                'price' => $total,
+                'price' => $inventory->price,
+                'address' => Auth::user()->address,
+                'postal' => Auth::user()->postal,
             ]);
 
             $inventory->amount -= $buyAmount;

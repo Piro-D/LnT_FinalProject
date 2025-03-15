@@ -18,7 +18,9 @@ class AdminSeeder extends Seeder
             ['name' => 'adminTest',
             'password' => 'admin123',
             'role' => 'admin',
-            'phone' => '081241005971'],
+            'phone' => '081241005971',
+            'address'=> 'Test Address',
+            'postal' => '12345',],
         );
     }
 }
